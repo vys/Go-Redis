@@ -31,10 +31,10 @@ const (
 // various defaults for the connections
 // exported for user convenience.
 const (
-	DefaultReqChanSize          = 1000000
-	DefaultRespChanSize         = 1000000
-	DefaultTCPReadBuffSize      = 1024 * 256
-	DefaultTCPWriteBuffSize     = 1024 * 256
+	DefaultReqChanSize          = 1000
+	DefaultRespChanSize         = 1000
+	DefaultTCPReadBuffSize      = 1024 * 16
+	DefaultTCPWriteBuffSize     = 1024 * 16
 	DefaultTCPReadTimeoutNSecs  = 1000 * time.Nanosecond
 	DefaultTCPWriteTimeoutNSecs = 1000 * time.Nanosecond
 	DefaultTCPLinger            = 0 // -n: finish io; 0: discard, +n: wait for n secs to finish
